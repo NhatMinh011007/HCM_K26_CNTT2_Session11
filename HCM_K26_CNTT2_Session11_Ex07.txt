@@ -1,0 +1,20 @@
+PHẦN 1: PHÂN TÍCH LỖI
+1. Lỗi dòng tiêu đề & Cơ chế Auto TOC
+ -Cơ chế: Auto TOC chỉ quét các đoạn được gán nhãn cấu trúc (Heading 1, 2, 3), không quét theo kiểu dáng hình thức (cỡ chữ, in đậm, màu sắc).
+ -Nguyên nhân rỗng TOC: Cả 7 dòng đều ở dạng Normal + Định dạng thủ công. Đổi màu hay tô vàng không giúp Word hiểu đó là tiêu đề -> TOC xuất ra bị rỗng.
+2. Hậu quả nhầm cấp Heading
+ -Làm sai lệch thụt lề (indentation) trong mục lục. Nhầm H2 sang H3 khiến tiêu đề bị thụt vào quá sâu, làm rối mắt và sai logic phân cấp.
+PHẦN 2: SỬA LỖI & NGHIỆM THU
+3. Thao tác sửa 7 dòng tiêu đề
+Bôi đen từng dòng và nhấn phím tắt:
+1. Thông tin chung hội nghị -> Ctrl + Alt + 1 (Heading 1)
+1.1. Tên hội nghị -> Ctrl + Alt + 2 (Heading 2)
+1.2. Thời gian & địa điểm-> Ctrl + Alt + 2 (Heading 2)
+2. Cơ cấu ban tổ chức -> Ctrl + Alt + 1 (Heading 1)
+2.1. Ban Nội dung -> Ctrl + Alt + 2 (Heading 2) 
+2.1.1. Tiểu ban Kỹ thuật -> Ctrl + Alt + 3 (Heading 3)
+3. Lịch trình sự kiện -> Ctrl + Alt + 1 (Heading 1)
+Sau đó vào References -> Table of Contents -> Chọn mẫu tự động để chèn mục lục.
+4. Xử lý lệch số trang (Bẫy dữ liệu)
+Trạng thái: Số trang không tự đổi khi chưa lệnh cho Word làm mới.
+Thao tác: Click vào Mục lục -> Nhấn F9 (hoặc Fn + F9-> Chọn Update entire table -> Nhấn OK.
