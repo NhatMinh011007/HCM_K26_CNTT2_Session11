@@ -1,0 +1,29 @@
+Phần 1: Phân tích lỗi của Nam
+Nguyên nhân lỗi Mục lục trống trơn ("No table of contents entries found"):
+
+Nam sử dụng định dạng thủ công (tăng cỡ chữ, in đậm kiểu thông thường) thay vì gán nhãn Heading Styles chuẩn (Heading 1, Heading 2).
+
+Tính năng Auto TOC (Automatic Table of Contents) của Word chỉ quét và tạo mục lục dựa trên các đoạn văn bản được gán nhãn Heading, nên nó không nhận diện được các tiêu đề làm thủ công của Nam.
+
+Nguyên nhân đoạn văn dài 5 trang hiện lên mục lục:
+
+Nam đã vô tình quét khối và gán nhãn Heading 1 cho cả một đoạn văn bản dài thay vì chỉ chọn tiêu đề. Do đó, Word hiểu toàn bộ đoạn văn đó là một tiêu đề lớn và đưa tất cả vào bảng mục lục.
+
+Phần 2: Hướng dẫn sửa lỗi và thực hiện chuẩn hóa
+Bước 1: Khắc phục lỗi gán nhãn đoạn văn 5 trang
+
+Bôi đen đoạn văn bản bị gán nhãn Heading 1 nhầm, chuyển định dạng của nó về lại Normal.
+
+Bước 2: Gán nhãn Heading Styles chuẩn cấp bậc
+
+Tiêu đề chính (Chương/Mục lớn như "1. Giới thiệu", "2. Yêu cầu chức năng"): Bôi đen từng tiêu đề và chọn Heading 1 trên thanh Ribbon (Tab Home).
+
+Tiêu đề phụ (Mục con): Bôi đen và chọn Heading 2 (hoặc Heading 3 tùy cấp bậc nhỏ hơn).
+
+Bước 3: Chèn lại và cập nhật Auto TOC
+
+Xóa bảng mục lục bị lỗi cũ.
+
+Vào tab References > chọn Table of Contents > chọn kiểu mục lục tự động (Automatic Table).
+
+Khi gõ thêm nội dung hoặc thay đổi số trang, chỉ cần nhấp chuột vào bảng mục lục > chọn Update Table > chọn Update entire table để cập nhật lại toàn bộ số trang và tiêu đề chính xác.

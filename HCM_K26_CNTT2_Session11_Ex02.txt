@@ -1,0 +1,44 @@
+Phần 1: Phân tích 3 quy tắc vàng bị vi phạm
+Quy tắc 1: Không sử dụng Hàng trống (Blank Rows) cắt ngang bảng dữ liệu
+
+Hậu quả: Dữ liệu bị gián đoạn làm tính năng AutoFilter (Ctrl+Shift+L) hiểu nhầm bảng đã kết thúc ở hàng ngay trước hàng trống. Do đó, các hàng phía dưới bị "bỏ rơi" và nút Filter biến mất giữa chừng.
+
+Quy tắc 2: Không gộp ô (Merge Cells) trong vùng dữ liệu và thanh tiêu đề
+
+Hậu quả: Merge Cell phá hỏng cấu trúc dạng lưới (Grid) của cơ sở dữ liệu. Nó khiến AutoFilter, sắp xếp (Sort) hoặc các hàm tra cứu (VLOOKUP, INDEX/MATCH) hoạt động sai lệch hoặc bị lỗi.
+
+Quy tắc 3: Chuẩn hóa và làm sạch dữ liệu (Data Cleanliness - Không chứa khoảng trắng thừa)
+
+Hậu quả: Excel phân biệt tuyệt đối giữa chuỗi "Hỏng " (có khoảng trắng thừa) và "Hỏng" (không khoảng trắng). Điều này dẫn đến dữ liệu bị phân mảnh thành nhiều nhóm khác nhau dù về mặt ngữ nghĩa là giống nhau.
+
+Phần 2: Hướng dẫn hoàn thiện & Sửa lỗi
+Bước 1: Gỡ bỏ Merge Cells ở tiêu đề
+Chọn toàn bộ vùng tiêu đề bị gộp ô.
+
+Vào tab Home > bấm vào Merge & Center để gỡ bỏ hoàn toàn việc gộp ô.
+
+Điền lại tên tiêu đề cho rõ ràng trên từng cột riêng biệt.
+
+Bước 2: Xóa bỏ các hàng trống (Blank Rows)
+Bôi đen toàn bộ vùng bảng tính (hoặc nhấn Ctrl + A).
+
+Nhấn F5 (hoặc Ctrl + G) > chọn Special... > tích chọn Blanks > bấm OK.
+
+Trên thanh công cụ tab Home, chọn Delete > Delete Sheet Rows (hoặc chuột phải chọn Delete > Shift cells up) để xóa triệt để các hàng trống.
+
+Bước 3: Dùng hàm TRIM() làm sạch cột "Trạng thái"
+Tạo một cột phụ bên cạnh cột Trạng thái (ví dụ: cột Trạng thái Chuẩn).
+
+Tại ô đầu tiên của cột phụ (giả sử dữ liệu gốc ở ô C2), nhập công thức:
+=TRIM(C2)
+
+Mở rộng công thức cho toàn bộ các hàng trong bảng.
+
+Copy toàn bộ dữ liệu ở cột phụ > Chuột phải vào cột Trạng thái gốc > Chọn Paste Values (Dán giá trị 123).
+
+Xóa cột phụ vừa tạo.
+
+Bước 4: Kích hoạt lại AutoFilter
+Chọn một ô bất kỳ trong bảng dữ liệu sạch.
+
+Nhấn tổ hợp phím Ctrl + Shift + L để bật lại AutoFilter. Khi chọn bộ lọc ở cột Trạng thái, các giá trị đã được chuẩn hóa duy nhất thành một nhóm "Hỏng" duy nhất và bộ lọc bao phủ toàn bộ bảng dữ liệu.
