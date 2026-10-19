@@ -1,0 +1,25 @@
+CÁC THÀNH PHẦN VLOOKUP
+Lookup_value: TRIM(C2) (xử lý khoảng trắng thừa).
+
+Table_array: DanhMucTacGia!$A$2:$E$100 (cố định tuyệt đối bằng dấu $).
+
+Range_lookup: 0 hoặc FALSE (dò tìm chính xác).
+
+Col_index_num: 2 cho Tên, 4 cho Phòng, 5 cho Thù lao.
+
+CÁCH XỬ LÝ 3 BẪY DỮ LIỆU
+Bẫy 1 (Khoảng trắng): Dùng hàm TRIM() bao bọc giá trị tìm kiếm.
+
+Bẫy 2 (Lỗi #N/A): Lồng hàm IFERROR(..., "Chưa cập nhật") để thay thế thông báo lỗi.
+
+Bẫy 3 (Trôi bảng): Thêm dấu $ vào vùng tham chiếu để tránh bị lệch dòng khi kéo công thức.
+
+CÔNG THỨC HOÀN CHỈNH
+Ô D2 (Tên Tác Giả - Cột 2):
+=IFERROR(VLOOKUP(TRIM(C2), DanhMucTacGia!$A$2:$E$100, 2, FALSE), "Chưa cập nhật")
+
+Ô E2 (Phòng trình bày - Cột 4):
+=IFERROR(VLOOKUP(TRIM(C2), DanhMucTacGia!$A$2:$E$100, 4, FALSE), "Chưa cập nhật")
+
+Ô F2 (Thù lao - Cột 5):
+=IFERROR(VLOOKUP(TRIM(C2), DanhMucTacGia!$A$2:$E$100, 5, FALSE), "Chưa cập nhật")
