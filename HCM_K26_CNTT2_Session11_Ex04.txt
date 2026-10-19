@@ -1,0 +1,35 @@
+PHẦN 1: SO SÁNH PHƯƠNG PHÁP TRÌNH BÀY DOANH THU
+Tiêu chí 1: Tốc độ hiểu của người xem
+
+Copy bảng Excel 50 hàng: Rất chậm. Gây quá tải nhận thức, nhà đầu tư mất quá nhiều thời gian để dò tìm con số và tự tổng hợp thông tin.
+
+Bar Chart có highlight: Cực nhanh. Chỉ mất 3 giây để khán giả nắm bắt ngay bức tranh tổng quan và xu hướng cốt lõi.
+
+Tiêu chí 2: Tính thuyết phục
+
+Copy bảng Excel 50 hàng: Thấp. Biến nhà đầu tư thành người kiểm toán đi soi số chi tiết, làm lu mờ bức tranh chiến lược lớn của startup.
+
+Bar Chart có highlight: Cao. Dẫn dắt tâm lý người xem tập trung thẳng vào insight quan trọng nhất (ví dụ: tốc độ tăng trưởng doanh thu đột phá).
+
+Tiêu chí 3: Trải nghiệm & Sự tập trung
+
+Copy bảng Excel 50 hàng: Tiêu cực ("Death by PowerPoint"). Khán giả bận đọc chữ/số trên slide thay vì lắng nghe lời pitch của Founder.
+
+Bar Chart có highlight: Tích cực. Slide tối giản, trực quan, giữ toàn bộ sự chú ý của hội đồng đầu tư vào câu chuyện thuyết trình.
+
+PHẦN 2: GIẢI PHÁP THIẾT KẾ SLIDE MỚI
+1. Assertion Title (Tiêu đề kết luận):
+
+Thay vì đặt tiêu đề chủ đề như "Bảng doanh thu giai đoạn 2024-2026", hãy dùng tiêu đề khẳng định kết quả kinh doanh: "Doanh thu tăng trưởng 300% nhờ chiến lược mở rộng thị phần B2B".
+
+2. Loại biểu đồ (Data Visualization):
+
+Thay toàn bộ 50 hàng số liệu thô bằng một Column Chart (Biểu đồ cột) hoặc Line Chart (Biểu đồ đường) tổng hợp theo quý/năm.
+
+Kỹ thuật Highlight: Chỉ tô màu nổi bật (ví dụ: màu cam hoặc đỏ) cho cột/mốc doanh thu quan trọng nhất (như mốc gọi vốn hiện tại), các cột còn lại để màu xám nhạt làm nền. Các số liệu chi tiết quá dài có thể đưa vào phần Phụ lục (Appendix).
+
+3. Thông số thiết kế & Quy tắc 30:
+
+Màu sắc chủ đạo: Nền sáng (trắng/xám nhạt), chữ đen/xám đậm, điểm nhấn bằng 1 màu thương hiệu duy nhất.
+
+Cỡ font tối thiểu (Quy tắc 30): Kích thước chữ nhỏ nhất trên slide không được dưới 30pt. Quy tắc này ép người thiết kế phải cô đọng thông tin, đồng thời giúp nhà đầu tư ở hàng ghế xa nhất vẫn đọc rõ ràng mà không bị mỏi mắt.
