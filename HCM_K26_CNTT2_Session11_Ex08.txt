@@ -1,0 +1,16 @@
+PHẦN 1: PHÂN TÍCH LỖI
+1. Liệt kê lỗi trong bảng
+   Lỗi Merge tiêu đề (A1:E1): Vi phạm Quy tắc 1-> AutoFilter không nhận diện đúng tên cột ở Hàng 2.
+   Lỗi Hàng tổng chen ngang (Hàng 5): Vi phạm Quy tắc 2 & 5 -> AutoFilter bị ngắt quãng, bỏ sót toàn bộ dữ liệu từ Hàng 6 trở đi.
+   Lỗi Khoảng trắng thừa (B4): Vi phạm chuẩn hóa dữ liệu -> So sánh chuỗi bị sai lệch.
+2. Lý do khoảng trắng làm Filter sai
+   Filter so sánh dựa trên mã ASCII/Unicode từng ký tự. Chuỗi có khoảng trắng thừa có số ký tự nhiều hơn chuỗi gốc nên bị tính là giá trị hoàn toàn khác, dẫn đến bị bỏ qua khi lọc.
+PHẦN 2: SỬA LỖI & NGHIỆM THU
+  3. Cấu trúc bảng chuẩn Database (Trình bày bằng văn bản)
+   Tiêu đề báo cáo: Đặt tách biệt ở hàng trên cùng, tuyệt đối không gộp ô (không merge A1:E1).
+   Hàng tiêu đề cột (Header): Gồm 5 cột liền mạch gồm STT, Họ và Tên, Khoa / Viện, Điểm Xét Duyệt, và Trạng Thái.
+   Vùng dữ liệu: Các bản ghi được liệt kê liên tục từ trên xuống dưới (ví dụ: dòng 1 là Nguyễn Văn An, CNTT, 8.5, Đã duyệt; dòng 2 là Trần Thị Bình, CNTT, 7.9, Chờ duyệt;...).
+   Dòng tổng kết: Phải được đặt ở dưới đáy bảng (ví dụ: dùng công thức =COUNTIF(C2:C121, "CNTT") ở ngoài hoặc cuối bảng), không được chèn ngắt quãng vào giữa dữ liệu.
+4. Công thức TRIM & Thao tác lọc
+  Công thức xử lý tên: Sử dụng hàm =TRIM(B2) để tự động cắt bỏ toàn bộ khoảng trắng thừa vô hình.
+  Thao tác lọc: Bôi đen toàn bộ bảng dữ liệu -> Nhấn tổ hợp phím Ctrl + Shift + L -> Tại cột Khoa/Viện chọn giá trị CNTT -> Tại cột Điểm Xét Duyệt chọn điều kiện lớn hơn hoặc bằng 8.0.
